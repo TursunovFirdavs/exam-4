@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="./photo/logo.svg" alt="rasm">
+            <div class="regestir-wrapper">
+                <a href="./pages/login.html">Log in</a>
+                <a href="./pages/signup.html">Sign up</a>
+            </div>
+            <a href="./pages/dashboard.html" class="dashboard-link">Dashboard</a>
+        </nav>
+    </div>
+
+    <div class="hero-img"></div>
+    
+    <div class="category-wrapper">
+        <h2>All articles</h2>
+        <div class="swiper-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

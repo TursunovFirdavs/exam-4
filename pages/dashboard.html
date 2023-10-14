@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../style/style.min.css">
+</head>
+<body>
+    <div class="wrapper-center">
+        <div class="dashboard-wrapper">
+            <div class="dashboard">
+                <h2>Dashboard</h2>
+                <a href="../index.html" class="dashboard-user">
+                    <img src="../photo/image 3.png" alt="">
+                    <div class="dashboard-user-name">
+                        <h3>Ibrokhim Jalalov</h3>
+                        <strong>Author</strong>
+                    </div>
+                </a>
+                <div class="post-pages">
+                    <a href="./dashboard.html?page=create" class="creat-post">Create Post</a>
+                <a href="./dashboard.html?page=manage" class="manage-post">Manage Posts</a>
+                </div>
+                <p id="sign-out">Sign out?</p>
+            </div>
+            <main class="creat-post-wrapper">
+                <div data-content-name="create" id="creat-content" class="creat-content">
+                    <h2>Create New Post</h2>
+                    <form>
+                        <label>Post title</label>
+                        <input type="text">
+                        <label>Post image</label>
+                        <div class="creat-post-input-wrapper">    
+                            <input type="text">
+                            <select>
+                                <option>Select post category</option>
+                            </select>
+                        </div>
+                        <label>Post description</label>
+                        <textarea></textarea>
+                    </form>
+                </div>
+                <div data-content-name="manage" id="manage-content" class="manage-content">
+                    <h2>Manage post</h2>
+                    <!-- <div class="swiper-container">
+                        <div class="swiper mySwiper">
+                            <div class="dashboard-swiper-wrapper">
+
+                            </div>
+                          </div>
+                    </div> -->
+                    <div class="delete-acc-wrapper">
+                        <div class="delete-acc ">
+                            <h3>Sign Out?</h3>
+                            <p>Do you want to Sign Out? Really?</p>
+                            <a href="../index.html" id="sign-out-btn">Sign Out</a>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                    </div>
+                    <!-- <div class="delete-post-wrapper">
+                        <div class="delete-post ">
+                            <h3>Delete Post</h3>
+                            <p>Are you sure to delete this post?</p>
+                            <a href="../index.html" id="deleting-btn">Delete</a>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                    </div> -->
+                </div>  
+                  
+            </main>
+            
+        </div>
+        
+    </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

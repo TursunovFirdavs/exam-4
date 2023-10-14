@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../style/style.min.css">
+    </head>
+    <body>
+        <div class="wrapper-center">
+            <div class="sign-up">
+                <img src="../photo/logo.svg" alt="">
+                <h1>Sign up</h1>
+                <p data-main-message></p>
+                <form id="signup-form">
+                    <p data-message-username></p>
+                    <input id="signup-name" type="text" placeholder="Firstname" required>
+                    <p data-message-lastname></p>
+                    <input id="signup-lastname"  type="text" placeholder="Lastname" required>
+                    <p data-message-email></p>
+                    <input id="signup-email" type="email" placeholder="Email" required>
+                    <p data-message-password></p>
+                    <div class="password-input" required>
+                        <input id="signup-password" type="password" placeholder="Password" required>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <p>Don’t you have an account? <a href="./login.html">Login</a>.</p>
+                    <button>Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../js/signup.js"></script>
+    </body>
+    </html>
